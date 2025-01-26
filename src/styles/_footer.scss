@@ -1,0 +1,27 @@
+@use 'variables';
+
+.footer {
+    padding: 2vh 10vw 0;
+    margin-bottom: 58px;
+    display: block;
+
+    &__text {
+        margin-bottom: 22px;
+        font-style: italic;
+        
+        span {
+            text-decoration: underline;
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(4, auto);
+        gap: 12px;
+
+        a {
+            color: variables.$mainTxt;
+        }
+    }
+}

@@ -33,6 +33,10 @@
                         color: variables.$mainTxt;
                         cursor: pointer;
 
+                        &:hover {
+                            color: #fff;
+                            font-weight: bold ease ;
+                        }
                     }
                 }
             }

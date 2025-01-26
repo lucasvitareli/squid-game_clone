@@ -3,14 +3,7 @@
 @use 'info';
 @use 'trailers';
 @use 'moreDetails';
-
-/*@use 'header';
-@use 'trailers';
-@use 'info';
-
-@use 'more_info';
-@use 'more_to_watch';
-@use 'plans';
+@use 'moreToWatch';
 @use 'footer';
 
 @font-face {
@@ -23,7 +16,7 @@
     font-family: Avenir;
     src: url(../../assets/fonts/Avenir-Bold.woff2);
     font-weight: 700;
-}*/
+}
 
 * {
     margin: 0;

@@ -1,0 +1,39 @@
+@use 'variables';
+
+.moreToWatch {
+    padding: 2vh 10vw 0;
+    margin-bottom: 58px;
+
+    &__container {
+
+        h2 {
+            margin-bottom: 16px;
+        }
+
+        &__list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 20px;
+            width: 100%;
+            margin-bottom: 58px;
+
+            &__item {
+                display: flex;
+                cursor: pointer;
+
+            }
+
+            img {
+                border-radius: 18px;
+                width: 240px;
+                height: 336px;
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+}
