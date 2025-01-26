@@ -1,0 +1,74 @@
+@use 'variables';
+
+
+.hero {
+    position: relative;
+    display: block;
+    padding: 5.8vh;
+    padding-top: 80px;
+    text-align: center;
+
+    &__image {
+        display: block;
+        width: 100%;
+        border-radius: 1px #fff solid;
+    }
+
+    &__content {
+        position: absolute;
+        bottom: 8%;
+        left: 8%;
+        right: 8%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .watch-btn {
+            background-color: variables.$watchNowBtn;
+            color: variables.$mainTxt;
+            padding: 10px 72px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 22px;
+            border: 0.5px solid black;
+            letter-spacing: .5px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: variables.$hoverWatchNowBtn;
+            }
+        }
+
+        .hero-txt {
+            font-weight: 600;
+            margin-top: 8px;
+        }
+
+        .trailer-btn {
+            background-color: #0000002c;
+            color: #fff;
+            letter-spacing: 0.5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: 700;
+            border-radius: 22px;
+            border: 0.5px solid black;
+            cursor: pointer;
+
+            &:hover {
+                border: 0.5px solid #fff;
+            }
+
+        }
+
+        .icon-play {
+            font-size: 22px;
+            margin-right: 4px;
+        }
+
+
+
+
+    }
+
+}

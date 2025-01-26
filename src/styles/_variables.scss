@@ -1,0 +1,10 @@
+@use 'sass:color';
+
+$bgColor: #1C1917;
+$containersBgColor: #464444; 
+$mainTxt:#F3F3F3;
+$secondTxt: #b8b4b4;
+$watchNowBtn: #E50914;
+$hoverWatchNowBtn: color.adjust(#E50914, $lightness: -3%);
+$secondButton: #0063e5;
+

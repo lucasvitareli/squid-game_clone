@@ -1,0 +1,40 @@
+@use 'variables';
+
+.trailers {
+    padding: 2vh 10vw 0;
+    margin-bottom: 58px;
+
+    &__container {
+
+        .trailer_title {
+            font-weight: 700;
+        }
+
+        .trailer_title {
+            margin-top: 58px;
+            margin-bottom: 12px;
+        }
+
+        .trailer_list {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            &__item {
+
+                &__video {
+
+                }
+
+                span {
+                    letter-spacing: 2px;
+                    font-weight: 600;
+                    color: variables.$secondTxt;
+                }
+
+                p {
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}

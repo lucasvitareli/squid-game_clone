@@ -1,0 +1,79 @@
+@use 'variables';
+@use 'hero';
+@use 'info';
+@use 'trailers';
+@use 'moreDetails';
+
+/*@use 'header';
+@use 'trailers';
+@use 'info';
+
+@use 'more_info';
+@use 'more_to_watch';
+@use 'plans';
+@use 'footer';
+
+@font-face {
+    font-family: Avenir;
+    src: url(../../assets/fonts/Avenir-Regular.woff2);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url(../../assets/fonts/Avenir-Bold.woff2);
+    font-weight: 700;
+}*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Avenir, sans-serif;
+    list-style: none;
+}
+
+body {
+    background-color: variables.$bgColor;
+}
+@mixin text($fontSize: 16px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: variables.$mainTxt;
+}
+
+@mixin title($fontSize: 32px) {
+    @include text($fontSize);
+    color: variables.$mainTxt;
+}
+
+.title {
+    @include title(24px);
+}
+
+.title--small {
+    @include title(16px);
+}
+
+.title--big {
+    @include title(32px);
+}
+
+.text {
+    @include text;
+}
+
+.text--small {
+    @include text(14px);
+    color: variables.$secondTxt;
+}
+
+.text--big {
+    @include text(18px);
+}
+
+.link-text {
+    @include text;
+    color: variables.$secondTxt;
+    text-decoration: underline;
+}

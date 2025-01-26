@@ -1,0 +1,49 @@
+@use 'variables';
+
+.info {
+    padding: 2vh 10vw 0;
+    
+
+    &__container {
+        padding: 32px 24px;
+        display: block;
+        background-color: variables.$containersBgColor;
+        border: 0.5 solid #fff;
+        border-radius: 22px;
+
+        .info_title {}
+
+        .info_list {
+            display: flex;
+            margin-top: 8px;
+            font-weight: bold;
+
+            &__item {
+                margin-right: 38px;
+                list-style: disc;
+
+            }
+
+            :first-child {
+                list-style: none;
+            }
+        }
+
+        .info__text {
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 8px;
+            font-weight: bold;
+
+            &__left {
+                border-right: 1px solid variables.$secondTxt;
+                padding-right: 20px;
+            }
+
+            &__right {
+                padding-left: 20px ;
+            }
+
+        }
+    }
+}
