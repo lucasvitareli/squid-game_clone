@@ -42,4 +42,52 @@
             }
         }
     }
+
+    @media (max-width: 768px) {
+        padding: 1vh 5vw 0;
+        margin-top: 30px;
+
+        .container {
+
+            h2 {
+                display: flex;
+                justify-content: center;
+                font-weight: 700;
+                font-size: 24px;
+            }
+
+            &__list {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 8px;
+
+                &__item {
+                    background-color: variables.$containersBgColor;
+                    padding: 16px 12px;
+                    border: 0.5 solid #fff;
+                    border-radius: 20px;
+
+                    h4 {
+                        margin-bottom: -4px;
+                        font-size: 14px;
+                    }
+
+                    p {
+                        margin-bottom: 4px;
+                        font-size: 14px;
+
+                        a {
+                            color: variables.$mainTxt;
+                            cursor: pointer;
+
+                            &:hover {
+                                color: #fff;
+                                font-weight: bold ease;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

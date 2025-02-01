@@ -1,14 +1,14 @@
 @use 'variables';
 
 .footer {
-    padding: 2vh 10vw; 
+    padding: 2vh 10vw;
     display: block;
     background-color: variables.$containersBgColor;
 
     &__text {
         margin-bottom: 22px;
         font-style: italic;
-        
+
         span {
             text-decoration: underline;
         }
@@ -22,6 +22,28 @@
 
         a {
             color: variables.$mainTxt;
+        }
+    }
+
+    @media (max-width: 768px) {
+        padding: 1vh 5vw;
+        display: block;
+
+        &__text {
+            p {
+                margin-bottom: 12px;
+                font-size: 16px;
+            }
+        }
+
+        &__list {
+            display: grid;
+            grid-template-columns: 1fr;
+            margin-bottom: 24px;
+
+            a {
+                font-size: 14px;
+            }
         }
     }
 }
