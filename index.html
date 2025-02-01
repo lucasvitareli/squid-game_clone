@@ -11,12 +11,35 @@
 </head>
 
 <body>
-    <section class="hero">
+    <header class="header" id="header">
+        <div class="container">
+            <h1 class="container__logo">
+                <a href="#header">
+                    <img src="src/images/logos/Logonetflix.png" alt="Neflix logo">
+                </a>
+            </h1>
+            <button class="sign-in_btn" id="teste">Sign in</button>
+        </div>
+        <nav class="container__nav">
+            <ul class="container__nav__list">
+                <li class="container__nav__list__item text">
+                    <a class="links" href="#trailers">Trailers</a>
+                </li>
+                <li class="container__nav__list__item text">
+                    <a class="links" href="#more_details">More Details</a>
+                </li>
+                <li class="container__nav__list__item text">
+                    <a class="links" href="#moreToWatch">More to watch</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero">
         <img class="hero__image" src="src/images/hero_squid_game.png" alt="Squid Game" />
         <div class="hero__content">
             <div class="hero__content__watch-now">
                 <button class="watch-btn">Watch now</button>
-                <p class="hero-txt ">Endless entertainment starting at £4.99</p>
             </div>
             <button class="trailer-btn">
                 <i class="icon-play fa-regular fa-circle-play"></i> Play Trailer
@@ -46,7 +69,7 @@
         </div>
     </section>
 
-    <section class="trailers">
+    <section id="trailers" class="trailers">
         <div class="trailers__container">
             <h2 class="trailer_title title--big">Trailers</h2>
             <div class="trailer_list">
@@ -84,7 +107,7 @@
         </div>
     </section>
 
-    <section class="more_details">
+    <section id="more_details" class="more_details">
         <div class="container">
             <h2 class="moreDetails_title title--big">More Details</h2>
             <div class="container__list">
@@ -125,7 +148,7 @@
         </div>
     </section>
 
-    <section class="moreToWatch">
+    <section id="moreToWatch" class="moreToWatch">
         <div class="moreToWatch__container">
             <h2 class="trailer_title title--big">You might also like</h2>
             <ul class="moreToWatch__container__list">
@@ -246,4 +269,5 @@
 
 </body>
 
+<script src="src/scripts/main.js"></script>/ 
 </html>

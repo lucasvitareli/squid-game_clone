@@ -1,4 +1,5 @@
 @use 'variables';
+@use 'header';
 @use 'hero';
 @use 'info';
 @use 'trailers';
@@ -24,11 +25,14 @@
     box-sizing: border-box;
     font-family: Avenir, sans-serif;
     list-style: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 58px;
 }
 
 body {
     background-color: variables.$bgColor;
 }
+
 @mixin text($fontSize: 16px) {
     font-size: $fontSize;
     line-height: $fontSize + 10px;
@@ -70,3 +74,4 @@ body {
     color: variables.$secondTxt;
     text-decoration: underline;
 }
+

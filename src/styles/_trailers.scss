@@ -2,7 +2,7 @@
 
 .trailers {
     padding: 2vh 10vw 0;
-    margin-bottom: 58px;
+    margin-top: 58px;
 
     &__container {
 
@@ -11,8 +11,8 @@
         }
 
         .trailer_title {
-            margin-top: 58px;
             margin-bottom: 12px;
+            scroll-margin-top: 58px;
         }
 
         .trailer_list {
@@ -21,9 +21,7 @@
 
             &__item {
 
-                &__video {
-
-                }
+                &__video {}
 
                 span {
                     letter-spacing: 2px;

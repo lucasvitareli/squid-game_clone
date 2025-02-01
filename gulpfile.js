@@ -2,7 +2,7 @@ const gulp = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const concat = require('gulp-concat');
 const imagemin = require('gulp-imagemin');
-//const uglify = require('gulp-uglify');
+const uglify = require('gulp-uglify');
 
 
 function styles() {
@@ -18,11 +18,11 @@ function images() {
         .pipe(gulp.dest('./dist/images'))
 }
 
-/*function scripts() {
+function scripts() {
     return gulp.src('./src/scripts/*.js')
     .pipe(uglify())
     .pipe(gulp.dest('./dist/js'))
-}*/
+}
 
 function watch() {
     gulp.watch('./src/styles/**/*.scss', styles);
@@ -31,7 +31,7 @@ function watch() {
 
 }
 
-exports.build = gulp.parallel(styles, images, );
+exports.build = gulp.parallel(styles, images, scripts);
 exports.dev = gulp.series(exports.build, watch);
 
 

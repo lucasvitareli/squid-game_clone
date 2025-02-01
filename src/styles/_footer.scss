@@ -1,9 +1,9 @@
 @use 'variables';
 
 .footer {
-    padding: 2vh 10vw 0;
-    margin-bottom: 58px;
+    padding: 2vh 10vw; 
     display: block;
+    background-color: variables.$containersBgColor;
 
     &__text {
         margin-bottom: 22px;

@@ -4,20 +4,23 @@
 .hero {
     position: relative;
     display: block;
-    padding: 5.8vh;
-    padding-top: 80px;
+    padding: 5.8vw;
+    padding-bottom: 0;
+    padding-top: 0px;
     text-align: center;
 
     &__image {
         display: block;
         width: 100%;
-        border-radius: 1px #fff solid;
+        border: 2px #fff solid;
+        border-radius: 20px;
+        
     }
 
     &__content {
         position: absolute;
-        bottom: 8%;
-        left: 8%;
+        bottom: 4%;
+        left: 12%;
         right: 8%;
         display: flex;
         align-items: center;
@@ -30,7 +33,7 @@
             font-size: 18px;
             font-weight: bold;
             border-radius: 22px;
-            border: 0.5px solid black;
+            border: 0.5px solid variables.$btnBorder;
             letter-spacing: .5px;
             cursor: pointer;
 
@@ -39,21 +42,17 @@
             }
         }
 
-        .hero-txt {
-            font-weight: 600;
-            margin-top: 8px;
-        }
-
         .trailer-btn {
-            background-color: #0000002c;
-            color: #fff;
+            background-color: variables.$secondButton;
+            color: variables.$mainTxt;
             letter-spacing: 0.5px;
             padding: 10px 20px;
             font-size: 16px;
             font-weight: 700;
             border-radius: 22px;
-            border: 0.5px solid black;
+            border: 0.5px solid variables.$btnBorder;
             cursor: pointer;
+            transition: border 0.3s ease;
 
             &:hover {
                 border: 0.5px solid #fff;

@@ -1,0 +1,77 @@
+@use 'variables';
+
+.header {
+    padding: 1vw 4vh;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &__logo {
+            img {
+                width: 165px;
+                height: 60px;
+                cursor: pointer;
+            }
+        }
+
+
+        &__nav {
+            position: sticky;
+            top: 0;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+
+            &.reduce-padding {
+                padding-top: 4px;
+            }
+
+            &__list {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: variables.$watchNowBtn;
+                font-weight: 700;
+                width: 400px;
+                border-radius: 20px;
+
+                &__item {
+                    padding: 8px;
+                    margin-right: 12px;
+                    text-decoration: none;
+
+                    .links {
+                        color: #ffffffa8;
+                        text-decoration: none;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: variables.$mainTxt;
+                        }
+                    }
+
+
+                }
+            }
+        }
+
+        .sign-in_btn {
+            background-color: variables.$mainTxt;
+            color: variables.$bgColor;
+            letter-spacing: 0.5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: 700;
+            border-radius: 22px;
+            border: 0.5px solid black;
+            white-space: nowrap;
+            cursor: pointer;
+
+            &:hover {
+                border: 0.5px solid #fff;
+            }
+        }
+    }
+}
