@@ -11,6 +11,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": "16.x"
+  },
   "devDependencies": {
     "gulp": "^5.0.0",
     "gulp-clean-css": "^4.3.0",
