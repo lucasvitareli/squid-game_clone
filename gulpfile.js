@@ -33,5 +33,7 @@ function watch() {
 
 exports.build = gulp.parallel(styles, images, scripts);
 exports.dev = gulp.series(exports.build, watch);
+exports.default = exports.build;
+
 
 

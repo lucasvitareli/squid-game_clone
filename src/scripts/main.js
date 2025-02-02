@@ -24,8 +24,10 @@ function hideElements(nav) {
     nav.style.display = 'flex';
     nav.style.justifyContent = 'center';
     nav.style.width = '100%';
-    nav.style.position = 'fixed'; // Tornar o nav fixo no topo quando rolar para baixo
+    nav.style.position = 'fixed'; // fixar o nav no topo quando rolar para baixo
     nav.style.top = '0'; // Fixa o nav no topo
+    nav.style.left = '50%'; // Center the nav
+    nav.style.transform = 'translateX(-50%)'; // Center the nav
 }
 
 function showElements(nav) {

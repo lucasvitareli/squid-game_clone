@@ -1,8 +1,8 @@
 @use 'variables';
 
 .moreToWatch {
-    padding: 2vh 10vw 0;
-    margin-top: 58px;
+    padding: 2vh 10vw;
+    margin: 40px 0;
     &__container {
 
         h2 {
@@ -36,8 +36,8 @@
     }
 
     @media (max-width: 768px) {
-        padding: 1vh 5vw 0;
-        margin-top: 30px;
+        padding: 1vh 5vw;
+        margin: 20px 0;
 
         &__container {
 
